@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <EditText
+        android:layout_marginTop="40dp"
+        android:hint="Enter Number"
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:hint="Enter message"
+        android:layout_marginHorizontal="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/phoneNumber"
+        android:id="@+id/messageBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="150dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        />
+
+    <Button
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/messageBody"
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send" />
+
+
+
+
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/tittle"
+        android:layout_above="@+id/messageNumberReceive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recent message" />
+
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/messageNumberReceive"
+        android:layout_above="@+id/messageBodyReceive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/messageBodyReceive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+
+
+</RelativeLayout>
